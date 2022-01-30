@@ -1,0 +1,16 @@
+[package]
+name = "sled_rkyv_macros"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = ""
+homepage = "https://github.com/freopen/sled-rkyv"
+repository = "https://github.com/freopen/sled-rkyv"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.36"
+quote = "1.0.15"
+syn = {version = "1.0.86", features = ["extra-traits"] }

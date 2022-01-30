@@ -1,0 +1,12 @@
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+rkyv = "0.7.31"
+sled_rkyv = { version = "0.1.0", path = ".." }
+
+[dev-dependencies]
+tempfile = "3.3.0"

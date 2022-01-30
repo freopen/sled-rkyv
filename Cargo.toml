@@ -1,0 +1,22 @@
+[package]
+name = "sled_rkyv"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = ""
+homepage = "https://github.com/freopen/sled-rkyv"
+repository = "https://github.com/freopen/sled-rkyv"
+
+[workspace]
+members = ["sled_rkyv_macros", "tests"]
+
+[dependencies]
+lazy_static = "1.4.0"
+parking_lot = "0.11.2"
+rkyv = "0.7.31"
+sled = "0.34.6"
+sled_rkyv_macros = { version = "0.1.0", path = "sled_rkyv_macros" }
+thiserror = "1.0.30"
+
+[patch.crates-io]
+sled = { git = "https://github.com/spacejam/sled.git" }
